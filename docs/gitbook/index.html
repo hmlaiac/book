@@ -1,0 +1,307 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Gitbook · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../external/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Project Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../external/">
+            
+                <a href="../external/">
+            
+                    
+                    Other Book List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Gitbook</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="a-gitbook-installation">A. Gitbook Installation</h1>
+<p>Install Gitbook with npm, npm is a package manager for JavaScript, it is installed with Node.js.</p>
+<h2 id="a1-prerequests">A1. Prerequests</h2>
+<h3 id="windows-command-prompt">Windows command prompt</h3>
+<p>You must use the windows cmd to install gitbook, otherwise, you will get unexpected error.</p>
+<h3 id="nodejs-install-version-1041">Node.js install version 10.4.1</h3>
+<p>You need to install nvm for windows to manage the version of
+Node.js. <a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank">nvm for windows</a></p>
+<pre><code class="lang-shell">nvm install 10.4.1
+nvm use 10.4.1
+</code></pre>
+<h3 id="install-gitbook-cli-instead-of-gitbook">Install gitbook-cli instead of gitbook</h3>
+<p>You may find this error if install gitbook directly:
+<img src="img.png" alt="img.png"></p>
+<pre><code class="lang-shell">npm install -g gitbook-cli
+</code></pre>
+<h3 id="fetch-gitbook-with-default--specific-version">Fetch gitbook with default / specific version</h3>
+<pre><code class="lang-shell">gitbook fetch {version}
+</code></pre>
+<h3 id="valiadate-your-installation">Valiadate your installation</h3>
+<pre><code class="lang-shell">gitbook -V
+</code></pre>
+<p>Finally, you are able see the version of gitbook:</p>
+<p><img src="img_1.png" alt="img_1.png"></p>
+<h1 id="b-create-first-gitbook">B. Create First Gitbook</h1>
+<h2 id="b1-create-summarymd-to-include-all-readmemd-required-to-be-shown-in-the-book">B1. Create &quot;SUMMARY.md&quot; to include all &quot;README.md&quot; required to be shown in the book</h2>
+<pre><code class="lang-readme"># Summary
+
+* [Gitbook Introduction](README.md)
+</code></pre>
+<h2 id="b2-initialize-gitbook">B2. Initialize gitbook</h2>
+<pre><code class="lang-shell">
+```shell
+gitbook init
+</code></pre>
+<h2 id="b3-generate-static-website">B3. Generate static website</h2>
+<pre><code class="lang-shell">gitbook serve ./{book_name}
+</code></pre>
+<h2 id="b4-out-the-directory-of-static-website-to-target-directory">B4. Out the directory of static website to target directory</h2>
+<pre><code class="lang-shell">$ gitbook build --output=/tmp/gitbook
+</code></pre>
+<pre><code class="lang-shell">$ ls /tmp/gitbook/
+</code></pre>
+<h2 id="b5-generate-pdf">B5. Generate PDF</h2>
+<p>Install Calibre to generate PDF, <a href="https://calibre-ebook.com/download_windows64" target="_blank">download the application here</a></p>
+<pre><code class="lang-shell">gitbook pdf {book_name}
+</code></pre>
+<h1 id="c-publish-your-book-to-github-with-a-static-website">C. Publish your book to github with a static website</h1>
+<h2 id="c1-create-page-folder-in-your-project">C1. Create page folder in your project</h2>
+<p>In your root directory of your project, create a folder named &quot;docs&quot;</p>
+<pre><code class="lang-shell">mkdir docs
+</code></pre>
+<p>Copy and past the static website to the &quot;docs&quot; folder</p>
+<h2 id="c2-git-hub-settings">C2. Git hub Settings</h2>
+<p>In your project github repository, go to &quot;Settings&quot; -&gt; &quot;Pages&quot; -&gt; &quot;Build and Deployments&quot; -&gt; &quot;Branch: docs&quot; -&gt; &quot;Save&quot;</p>
+<p>In my page you can see my <a href="https://hmlaiac.github.io/book/" target="_blank">demo website here</a></p>
+<h1 id="reference">Reference</h1>
+<p>Reference: <a href="https://tonydeng.github.io/gitbook-zh/gitbook-howtouse/howtouse/gitbookinstall.html" target="_blank">Gitbook Chinese</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../external/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Other Book List">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Gitbook","level":"1.3","depth":1,"previous":{"title":"Other Book List","level":"1.2","depth":1,"path":"external/README.md","ref":"./external/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"gitbook/README.md","mtime":"2023-05-21T03:12:52.126Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-21T03:18:13.764Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook.js"></script>
+    <script src="theme.js"></script>
+    
+        
+        <script src="gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
