@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Project Introduction · GitBook</title>
+        <title>Gitbook Introduction · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,6 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="external/" />
-    
     
 
     </head>
@@ -92,33 +90,7 @@
                 <a href="./">
             
                     
-                    Project Introduction
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="external/">
-            
-                <a href="external/">
-            
-                    
-                    Other Book List
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="gitbook/">
-            
-                <a href="gitbook/">
-            
-                    
-                    Gitbook
+                    Gitbook Introduction
             
                 </a>
             
@@ -156,7 +128,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Project Introduction</a>
+        <a href="." >Gitbook Introduction</a>
     </h1>
 </div>
 
@@ -171,24 +143,46 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="gitbook-online-website-link">Gitbook Online Website link</h1>
-<p>REF LINK: <a href="https://hmlaiac.github.io/book/" target="_blank">https://hmlaiac.github.io/book/</a></p>
-<h1 id="abstract">Abstract</h1>
-<p>This is a collection of notes on various topics. The notes are written in markdown format, usually called &quot;README.md&quot;.
-There is a github page in this project, which is used to show the content of the notes. Users can search the content
-with the specific key word. For example, if you want to search the content of &quot;git&quot;, you can type &quot;git&quot; in the search.
-After getting desired result, you can find the project repository according to the name of folder. Then you can start
-your own development and implementation quickly and efficiently.</p>
-<h1 id="introduction">Introduction</h1>
-<p>In my personal experience, I have found that knowledge in my brain are no longer to exist after a period of time.
-Therefore, I have decided to write down all the knowledge in a new repository named &quot;book&quot;. Forgetting some important
-information is
-a painful experience, because you need to spend extra time to do researches and studies that you have done before. As a
-result,
-a new documentation system is required to collect all notes in my computer. For small project, I will put down the
-folder
-under &quot;root&quot; directly. For large project, I will create a new repository to store all the notes. In this way, I can
-quickly find resources I need in the future.</p>
+                                <h1 id="a-gitbook-installation">A. Gitbook Installation</h1>
+<p>Install Gitbook with npm, npm is a package manager for JavaScript, it is installed with Node.js.</p>
+<h2 id="a1-prerequests">A1. Prerequests</h2>
+<h3 id="windows-command-prompt">Windows command prompt</h3>
+<p>You must use the windows cmd to install gitbook, otherwise, you will get unexpected error.</p>
+<h3 id="nodejs-install-version-1041">Node.js install version 10.4.1</h3>
+<p>You need to install nvm for windows to manage the version of
+Node.js. <a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank">nvm for windows</a></p>
+<pre><code class="lang-shell">nvm install 10.4.1
+nvm use 10.4.1
+</code></pre>
+<h3 id="install-gitbook-cli-instead-of-gitbook">Install gitbook-cli instead of gitbook</h3>
+<p>You may find this error if install gitbook directly:
+<img src="img.png" alt="img.png"></p>
+<pre><code class="lang-shell">npm install -g gitbook-cli
+</code></pre>
+<h3 id="fetch-gitbook-with-default--specific-version">Fetch gitbook with default / specific version</h3>
+<pre><code class="lang-shell">gitbook fetch {version}
+</code></pre>
+<h3 id="valiadate-your-installation">Valiadate your installation</h3>
+<pre><code class="lang-shell">gitbook -V
+</code></pre>
+<p>Finally, you are able see the version of gitbook:</p>
+<p><img src="img_1.png" alt="img_1.png"></p>
+<h1 id="b-create-first-gitbook">B. Create First Gitbook</h1>
+<h2 id="b1-create-summarymd-to-include-all-readmemd-required-to-be-shown-in-the-book">B1. Create &quot;SUMMARY.md&quot; to include all &quot;README.md&quot; required to be shown in the book</h2>
+<pre><code class="lang-readme"># Summary
+
+* [Gitbook Introduction](README.md)
+</code></pre>
+<h2 id="b2-initialize-gitbook">B2. Initialize gitbook</h2>
+<pre><code class="lang-shell">
+```shell
+gitbook init
+</code></pre>
+<h2 id="b3-generate-static-website">B3. Generate static website</h2>
+<pre><code class="lang-shell">gitbook serve ./{book_name}
+</code></pre>
+<h1 id="reference">Reference</h1>
+<p>Reference: <a href="https://tonydeng.github.io/gitbook-zh/gitbook-howtouse/howtouse/gitbookinstall.html" target="_blank">Gitbook Chinese</a></p>
 
                                 
                                 </section>
@@ -217,10 +211,6 @@ quickly find resources I need in the future.</p>
             
                 
                 
-                <a href="external/" class="navigation navigation-next navigation-unique" aria-label="Next page: Other Book List">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
             
         
     </div>
@@ -228,7 +218,7 @@ quickly find resources I need in the future.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Project Introduction","level":"1.1","depth":1,"next":{"title":"Other Book List","level":"1.2","depth":1,"path":"external/README.md","ref":"./external/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2023-05-21T03:05:23.315Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-21T03:07:37.255Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Gitbook Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2023-05-20T15:18:40.414Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-20T15:18:41.941Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -236,6 +226,10 @@ quickly find resources I need in the future.</p>
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
