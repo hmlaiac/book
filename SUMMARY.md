@@ -1,8 +1,10 @@
 # Summary
 
-* [Introduction](README.md)
-* [book](C:/Users/Admin/Documents/book/README.md)
-    * [windows_cmd](C:/Users/Admin/Documents/book/windows_cmd/README.md)
-    * [external](C:/Users/Admin/Documents/book/external/README.md)
-    * [1-gitbook](C:/Users/Admin/Documents/book/1-gitbook/README.md)
+* [book](./README.md)
+* [windows_cmd](./windows_cmd/README.md)
+* [external](./external/README.md)
+* [Gitbook Tutorial](./Gitbook Tutorial/README.md)
+    * [Gitbook Automation](./Gitbook Tutorial/Gitbook Automation/README.md)
+* [Gadget](./Gadget/README.md)
+    * [Gitbook Automation](./Gadget/Gitbook Automation/README.md)
 
