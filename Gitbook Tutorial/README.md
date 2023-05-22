@@ -30,13 +30,13 @@ npm install -g gitbook-cli
 ### Fetch gitbook with default / specific version
 
 ```shell
-gitbook fetch {version}
+1-gitbook fetch {version}
 ```
 
 ### Valiadate your installation
 
 ```shell
-gitbook -V
+1-gitbook -V
 ```
 
 Finally, you are able see the version of gitbook:
