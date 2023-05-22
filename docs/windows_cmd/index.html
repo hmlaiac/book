@@ -1,0 +1,407 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>windows_cmd · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../external/" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    windows_cmd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../external/">
+            
+                <a href="../external/">
+            
+                    
+                    external
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Gitbook Tutorial/">
+            
+                <a href="../Gitbook Tutorial/">
+            
+                    
+                    Gitbook Tutorial
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Gitbook Tutorial/Gitbook Automation/">
+            
+                <a href="../Gitbook Tutorial/Gitbook Automation/">
+            
+                    
+                    Gitbook Automation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Gadget/">
+            
+                <a href="../Gadget/">
+            
+                    
+                    Gadget
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Gadget/Gitbook Automation/">
+            
+                <a href="../Gadget/Gitbook Automation/">
+            
+                    
+                    Gitbook Automation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >windows_cmd</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="install-plugins-for-windows-batcmd">Install plugins for windows bat/cmd</h1>
+<p>To help you to manage bat files, Jetbrains suggest you to install plugins.</p>
+<p><img src="img.png" alt="img.png"></p>
+<h2 id="a-basic-setting-commands">A. Basic setting commands</h2>
+<h3 id="change-command-prompt-title">Change command prompt title</h3>
+<pre><code class="lang-shell">title &lt;title&gt;
+</code></pre>
+<h3 id="print-out-text">Print out text</h3>
+<pre><code class="lang-shell">echo &lt;text&gt;
+</code></pre>
+<p><img src="img_1.png" alt="img_1.png"></p>
+<h3 id="system-variables">System variables</h3>
+<pre><code class="lang-shell">echo %1
+echo %2
+</code></pre>
+<p><img src="img_2.png" alt="img_2.png"></p>
+<p>After running command, we observe that command line run in bat/cmd file is linear. It means that it will run one by one.</p>
+<h2 id="b-run-with-some-logics">B. Run with some logics</h2>
+<p>In this example, we are going to create a new bat file named &quot;logic.bat&quot; to include some logical operations.</p>
+<h3 id="create-a-variable">Create a variable</h3>
+<pre><code class="lang-shell">set /A variable-name=value
+</code></pre>
+<ul>
+<li>variable-name is the name of the variable you want to set.</li>
+<li>value is the value which needs to be set against the variable.</li>
+<li>/A &#x2013; This switch is used if the value needs to be numeric in nature.</li>
+</ul>
+<h3 id="logic-operations">Logic operations</h3>
+<p>In windows bat/cmd, we can&apos;t use symbolic operators like &apos;&gt;&apos;, &apos;&lt;&apos; or &apos;==&apos; to build the logic.</p>
+<ul>
+<li>EQU - equal</li>
+<li>NEQ - not equal</li>
+<li>LSS - less than</li>
+<li>LEQ - less or equal</li>
+<li>GTR - greater than</li>
+<li>GEQ - greater or equal</li>
+</ul>
+<p>example:</p>
+<pre><code class="lang-shell">set /A a = 1, b = 2
+rem run some logics
+if %a% equ %b% (echo yes) else (echo no)
+if %a% neq %b% (echo yes) else (echo no)
+if %a% lss %b% (echo yes) else (echo no)
+if %a% leq %b% (echo yes) else (echo no)
+if %a% gtr %b% (echo yes) else (echo no)
+if %a% geq %b% (echo yes) else (echo no)
+</code></pre>
+<h2 id="other-operators">Other operators</h2>
+<h3 id="operator">&amp; operator</h3>
+<p>The &amp; operator is used to execute commands in sequence, as if they were on the same line, separated by spaces. The
+commands will be executed one by one. You can
+write down this command in command prompt directly, but it runs successfully in bat/cmd file.</p>
+<pre><code class="lang-shell">echo hello &amp; echo world
+</code></pre>
+<h3 id="operator">&amp;&amp; operator</h3>
+<p>The &amp;&amp; operator is used to execute commands in sequence, but the commands behind &quot;&amp;&amp;&quot; will be executed only if the
+previous command is executed successfully.</p>
+<pre><code class="lang-shell">find \&quot;ok\&quot; c:\test.txt &amp;&amp; echo SUCCESS
+</code></pre>
+<h3 id="operator">|| operator</h3>
+<p>The || operator is used to execute commands in sequence, but the commands behind &quot;||&quot; will be executed only if the previous command occurs error.</p>
+<pre><code class="lang-shell">find \&quot;ok\&quot; c:\test.txt || echo FAIL
+</code></pre>
+<p><img src="img_3.png" alt="img_3.png"></p>
+<h3 id="operator">&gt; operator</h3>
+<p>The &gt; operator is used to redirect the output of a command to a file. If the file already exists, it will be overwritten.</p>
+<p>In this example, we create a new file named &quot;test.txt&quot; and write down &quot;hello&quot; in it.</p>
+<pre><code class="lang-shell">echo hello &gt; windows_cmd/test.txt
+</code></pre>
+<p>Result:</p>
+<p><img src="img_4.png" alt="img_4.png"></p>
+<h3 id="operator">&gt;&gt; operator</h3>
+<p>The &gt;&gt; operator is used to redirect the output of a command to a file. If the file already exists, the new data will be appended to the end of the file.</p>
+<p>In this example, we append &quot;world&quot; to the end of &quot;test.txt&quot;.</p>
+<pre><code class="lang-shell">echo world &gt;&gt; windows_cmd/test.txt
+</code></pre>
+<p><img src="img_5.png" alt="img_5.png"></p>
+<h3 id="operator">&lt; operator</h3>
+<p>The &lt; operator is used to redirect the input of a command to a file.</p>
+<p>In this example, we read the content of &quot;test.txt&quot; and print it out.</p>
+<pre><code class="lang-shell">clip &lt; windows_cmd/test.txt
+</code></pre>
+<p><img src="img_6.png" alt="img_6.png"></p>
+<p>Problems:
+Can we automate gitbook build and push to github?</p>
+<h1 id="references">References</h1>
+<p><a href="https://cloud.tencent.com/developer/article/2004968" target="_blank">Tencent Docs</a></p>
+<p><a href="https://www.tutorialspoint.com/batch_script/index.htm" target="_blank">Tutorialspoint</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: book">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../external/" class="navigation navigation-next " aria-label="Next page: external">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"windows_cmd","level":"1.2","depth":1,"next":{"title":"external","level":"1.3","depth":1,"path":"external/README.md","ref":"./external/README.md","articles":[]},"previous":{"title":"book","level":"1.1","depth":1,"path":"README.md","ref":"./README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"windows_cmd/README.md","mtime":"2023-05-21T10:24:40.333Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-22T14:58:22.157Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
