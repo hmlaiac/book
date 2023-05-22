@@ -57,3 +57,10 @@ flowchart TD
 ### C1. A pdf file named book.pdf
 
 ![img_3.png](img_3.png)
+
+### C2. A static website repository
+
+All files will stored in the "docs" folder, which is a special folder to help you build the page of github
+Follow the instructions from previous chapter, you can display your book with a static website
+If you understand the settings of github page and configure the page directory, commit and push this repository to
+github. You can find your book in a static website @Thomas smile :) 
