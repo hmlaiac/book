@@ -15,6 +15,12 @@ goto loop
 rem if yes break the loop, else return to the loop
 :yes
 echo You have confirmed the directory of gitbook %directory%
+cd %directory%
+
+echo %CD%
+
+rem If summary exists, delete it
+if exist "SUMMARY.md" (rmdir /s /q "SUMMARY.md")
 
 rem create your summary file
 python md_to_gitbook.py %directory%

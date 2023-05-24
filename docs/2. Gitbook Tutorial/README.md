@@ -30,13 +30,13 @@ npm install -g gitbook-cli
 ### Fetch gitbook with default / specific version
 
 ```shell
-1-gitbook fetch {version}
+gitbook fetch {version}
 ```
 
 ### Valiadate your installation
 
 ```shell
-1-gitbook -V
+gitbook -V
 ```
 
 Finally, you are able see the version of gitbook:
@@ -55,6 +55,8 @@ Finally, you are able see the version of gitbook:
 
 ## B2. Initialize gitbook
 
+It help you to verify the content of "SUMMARY.md". Sometimes it may help you to fix the context error of "SUMMARY.md"
+
 ```shell
 
 ```shell
@@ -63,11 +65,17 @@ gitbook init
 
 ## B3. Generate static website
 
+It helps you to build a website with static html, css and js. You can visit the site with this
+link: http://localhost:4000. However, you may find this command <mark>useless</mark> because you may want to deploy your
+book website to your own server or github page
+
 ```shell
 gitbook serve ./{book_name}
 ```
 
 ## B4. Out the directory of static website to target directory
+
+It help you to collect all resources listed in 
 
 ```shell
 $ gitbook build --output=/tmp/gitbook

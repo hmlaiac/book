@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Gitbook Tutorial · GitBook</title>
+        <title>2. Gitbook Tutorial · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Gitbook Automation/" />
+    <link rel="next" href="A1. Gitbook Automation/" />
     
     
-    <link rel="prev" href="../external/" />
+    <link rel="prev" href="../1. External Book Link/" />
     
 
     </head>
@@ -102,12 +102,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../windows_cmd/">
+        <li class="chapter " data-level="1.2" data-path="../1. External Book Link/">
             
-                <a href="../windows_cmd/">
+                <a href="../1. External Book Link/">
             
                     
-                    windows_cmd
+                    1. External Book Link
             
                 </a>
             
@@ -115,25 +115,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../external/">
-            
-                <a href="../external/">
-            
-                    
-                    external
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.4" data-path="./">
+        <li class="chapter active" data-level="1.3" data-path="./">
             
                 <a href="./">
             
                     
-                    Gitbook Tutorial
+                    2. Gitbook Tutorial
             
                 </a>
             
@@ -142,12 +129,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="Gitbook Automation/">
+        <li class="chapter " data-level="1.3.1" data-path="A1. Gitbook Automation/">
             
-                <a href="Gitbook Automation/">
+                <a href="A1. Gitbook Automation/">
             
                     
-                    Gitbook Automation
+                    A1. Gitbook Automation
             
                 </a>
             
@@ -157,6 +144,19 @@
     
 
             </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../3. windows_cmd/">
+            
+                <a href="../3. windows_cmd/">
+            
+                    
+                    3. windows_cmd
+            
+                </a>
+            
+
             
         </li>
     
@@ -170,25 +170,6 @@
                 </a>
             
 
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.5.1" data-path="../Gadget/Gitbook Automation/">
-            
-                <a href="../Gadget/Gitbook Automation/">
-            
-                    
-                    Gitbook Automation
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -222,7 +203,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Gitbook Tutorial</a>
+        <a href=".." >2. Gitbook Tutorial</a>
     </h1>
 </div>
 
@@ -254,10 +235,10 @@ nvm use 10.4.1
 <pre><code class="lang-shell">npm install -g gitbook-cli
 </code></pre>
 <h3 id="fetch-gitbook-with-default--specific-version">Fetch gitbook with default / specific version</h3>
-<pre><code class="lang-shell">1-gitbook fetch {version}
+<pre><code class="lang-shell">gitbook fetch {version}
 </code></pre>
 <h3 id="valiadate-your-installation">Valiadate your installation</h3>
-<pre><code class="lang-shell">1-gitbook -V
+<pre><code class="lang-shell">gitbook -V
 </code></pre>
 <p>Finally, you are able see the version of gitbook:</p>
 <p><img src="img_1.png" alt="img_1.png"></p>
@@ -268,14 +249,19 @@ nvm use 10.4.1
 * [Gitbook Introduction](README.md)
 </code></pre>
 <h2 id="b2-initialize-gitbook">B2. Initialize gitbook</h2>
+<p>It help you to verify the content of &quot;SUMMARY.md&quot;. Sometimes it may help you to fix the context error of &quot;SUMMARY.md&quot;</p>
 <pre><code class="lang-shell">
 ```shell
 gitbook init
 </code></pre>
 <h2 id="b3-generate-static-website">B3. Generate static website</h2>
+<p>It helps you to build a website with static html, css and js. You can visit the site with this
+link: <a href="http://localhost:4000" target="_blank">http://localhost:4000</a>. However, you may find this command <mark>useless</mark> because you may want to deploy your
+book website to your own server or github page</p>
 <pre><code class="lang-shell">gitbook serve ./{book_name}
 </code></pre>
 <h2 id="b4-out-the-directory-of-static-website-to-target-directory">B4. Out the directory of static website to target directory</h2>
+<p>It help you to collect all resources listed in </p>
 <pre><code class="lang-shell">$ gitbook build --output=/tmp/gitbook
 </code></pre>
 <pre><code class="lang-shell">$ ls /tmp/gitbook/
@@ -322,12 +308,12 @@ gitbook init
 
             
                 
-                <a href="../external/" class="navigation navigation-prev " aria-label="Previous page: external">
+                <a href="../1. External Book Link/" class="navigation navigation-prev " aria-label="Previous page: 1. External Book Link">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Gitbook Automation/" class="navigation navigation-next " aria-label="Next page: Gitbook Automation">
+                <a href="A1. Gitbook Automation/" class="navigation navigation-next " aria-label="Next page: A1. Gitbook Automation">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -338,7 +324,7 @@ gitbook init
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Gitbook Tutorial","level":"1.4","depth":1,"next":{"title":"Gitbook Automation","level":"1.4.1","depth":2,"path":"Gitbook Tutorial/Gitbook Automation/README.md","ref":"./Gitbook Tutorial/Gitbook Automation/README.md","articles":[]},"previous":{"title":"external","level":"1.3","depth":1,"path":"external/README.md","ref":"./external/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Gitbook Tutorial/README.md","mtime":"2023-05-21T14:58:27.990Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-22T14:58:22.157Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2. Gitbook Tutorial","level":"1.3","depth":1,"next":{"title":"A1. Gitbook Automation","level":"1.3.1","depth":2,"path":"2. Gitbook Tutorial/A1. Gitbook Automation/README.md","ref":"./2. Gitbook Tutorial/A1. Gitbook Automation/README.md","articles":[]},"previous":{"title":"1. External Book Link","level":"1.2","depth":1,"path":"1. External Book Link/README.md","ref":"./1. External Book Link/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2. Gitbook Tutorial/README.md","mtime":"2023-05-24T14:22:10.474Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-24T15:41:08.187Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
