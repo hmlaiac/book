@@ -4,11 +4,13 @@
 
 User Guide:
 
-1. Folder name is case sensitive in this project, because the title of the book and chapter name will be generated from
-   the folder name.
+1. Folder name is Title name of specific topic in this project, because it helps to save your time to give name to each
+   topic. you can give a numerical string in the folder name. The book system will use the number to make the sorting.
+   e.g. Naming example
 
-- Book name: {1-book_name}
-- Chapter name: {1.1-chapter_name}
+- [x] Book name: {1-book_name}
+- [x] Book name:{Chapter 1-book_name}
+- [x] Book name:{A2. book_name}
 
 e.g.
 folder_name {1-gitbook} --> 1. Gitbook
@@ -63,4 +65,6 @@ flowchart TD
 All files will stored in the "docs" folder, which is a special folder to help you build the page of github
 Follow the instructions from previous chapter, you can display your book with a static website
 If you understand the settings of github page and configure the page directory, commit and push this repository to
-github. You can find your book in a static website @Thomas smile :) 
+github. You can find your book in a static website @Thomas smile :)
+
+Be patient, wait around 10 minutes to see the result in website.

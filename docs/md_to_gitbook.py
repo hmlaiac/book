@@ -9,6 +9,17 @@ def convert_dir2href(dir, pattern):
     linux_path = "." + linux_path
     return linux_path
 
+def sort_func(name):
+    # Get the string integer from the file name
+    temp = re.findall(r'\d+', name)
+
+    if temp:
+        return int(temp[0])
+    else:
+        # The maximum book index is 9999999
+        return 9999999
+
+
 if __name__ == "__main__":
     # Get the file location from the python parser
     parser = argparse.ArgumentParser()
@@ -26,7 +37,8 @@ if __name__ == "__main__":
         data = stack.pop()
         current_directory = data[0]
         title_name = os.path.basename(current_directory)
-        names = sorted(os.listdir(current_directory))
+
+        names = sorted(os.listdir(current_directory), key=sort_func, reverse=True)
         for name in names:
             file = current_directory + "\\" + name
             if name == "README.md" and title_name != "docs":
