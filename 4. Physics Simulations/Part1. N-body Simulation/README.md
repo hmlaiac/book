@@ -84,6 +84,21 @@ avoid singularities and numerical instabilities that can arise when two particle
 
 In other world, to prevent the distance becoming `0` in calculation, we add a small value to the distance.
 
+
+# E. Result
+
+![img_2.png](img_2.png)
+
 # References:
 
 Original Article: https://medium.com/swlh/create-your-own-n-body-simulation-with-python-f417234885e9
+
+# Q&A
+
+## Q1. What happen if the particle reach the boarder of the plot?
+
+Answer: The particle will disappear and continue its movement, but it will be bounce back to the graph one day due to gravitational force.
+
+## Q2. Could you use the same idea to simulate the movement of particles if given a fixed particle with heavy mass?
+
+Answer: To do

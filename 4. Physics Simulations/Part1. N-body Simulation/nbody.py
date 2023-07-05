@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 
 """
 Create Your Own N-body Simulation (With Python)
@@ -186,4 +187,5 @@ def main():
 
 
 if __name__ == "__main__":
+    mpl.use('TkAgg')
     main()
